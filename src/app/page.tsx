@@ -113,11 +113,11 @@ export default function Home() {
                   href={checkoutLink}
                   className="inline-flex min-h-14 items-center justify-center rounded-full bg-[var(--color-gold)] px-8 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-ink)] transition duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-gold-soft)]"
                 >
-                  Reserve your place · €333
+                  Reserve your place - EUR 333
                 </a>
                 <a
                   href="#method"
-                  className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/18 px-8 text-sm font-semibold uppercase tracking-[0.18em] text-white transition duration-300 hover:border-white/40 hover:bg-white/6"
+                  className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/18 px-8 text-sm font-semibold uppercase tracking-[0.18em] text-white transition duration-300 hover:border-white/40 hover:bg-white/[0.06]"
                 >
                   See the method
                 </a>
@@ -145,7 +145,7 @@ export default function Home() {
                     Access
                   </p>
                   <p className="mt-2 text-base text-white/82">
-                    One secure Stripe payment of €333
+                    One secure Stripe payment of EUR 333
                   </p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function Home() {
                 Safe Love Transformation
               </p>
               <p className="mt-3 font-serif text-4xl text-white sm:text-5xl">
-                €333
+                EUR 333
               </p>
             </div>
             <p className="max-w-sm text-sm leading-7 text-white/64">
@@ -313,7 +313,7 @@ export default function Home() {
             </a>
             <a
               href="#method"
-              className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/18 px-8 text-sm font-semibold uppercase tracking-[0.18em] text-white transition duration-300 hover:border-white/40 hover:bg-white/6"
+               className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/18 px-8 text-sm font-semibold uppercase tracking-[0.18em] text-white transition duration-300 hover:border-white/40 hover:bg-white/[0.06]"
             >
               Review the framework
             </a>
