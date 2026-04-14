@@ -113,7 +113,7 @@ export default function Home() {
                   href={checkoutLink}
                   className="inline-flex min-h-14 items-center justify-center rounded-full bg-[var(--color-gold)] px-8 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-ink)] transition duration-300 hover:-translate-y-0.5 hover:bg-[var(--color-gold-soft)]"
                 >
-                  Reserve your place - EUR 333
+                  Reserve your place - EUR 1
                 </a>
                 <a
                   href="#method"
@@ -145,7 +145,7 @@ export default function Home() {
                     Access
                   </p>
                   <p className="mt-2 text-base text-white/82">
-                    One secure Stripe payment of EUR 333
+                    One secure Stripe payment of EUR 1
                   </p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function Home() {
                 Safe Love Transformation
               </p>
               <p className="mt-3 font-serif text-4xl text-white sm:text-5xl">
-                EUR 333
+                EUR 1
               </p>
             </div>
             <p className="max-w-sm text-sm leading-7 text-white/64">
