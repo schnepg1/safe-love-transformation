@@ -58,8 +58,10 @@ const questions = [
   },
 ];
 
+const defaultCheckoutLink = "https://buy.stripe.com/fZubJ0aCwfqg4icaLj7bW00";
+
 const checkoutLink =
-  process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK?.trim() || "#reserve";
+  process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK?.trim() || defaultCheckoutLink;
 
 export default function Home() {
   const checkoutReady = checkoutLink !== "#reserve";
