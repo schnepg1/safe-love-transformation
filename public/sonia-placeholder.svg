@@ -1,0 +1,29 @@
+<svg width="960" height="1200" viewBox="0 0 960 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="840" y2="1140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6EAE0"/>
+      <stop offset="1" stop-color="#D8B199"/>
+    </linearGradient>
+    <linearGradient id="veil" x1="260" y1="200" x2="700" y2="1040" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7A4A42" stop-opacity="0.16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(480 290) rotate(90) scale(360 290)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="1200" fill="url(#bg)"/>
+  <circle cx="480" cy="250" r="300" fill="url(#glow)"/>
+  <path d="M178 1010C210 792 300 620 422 564C466 544 494 544 538 564C660 620 750 792 782 1010C782 1088 736 1142 666 1164H294C224 1142 178 1088 178 1010Z" fill="#8E6559" fill-opacity="0.2"/>
+  <path d="M316 1008C326 860 370 738 416 666C446 618 476 598 480 598C484 598 514 618 544 666C590 738 634 860 644 1008" stroke="#70433D" stroke-opacity="0.28" stroke-width="44" stroke-linecap="round"/>
+  <circle cx="480" cy="422" r="180" fill="url(#veil)"/>
+  <path d="M368 416C368 354 415 304 480 304C545 304 592 354 592 416C592 478 563 536 520 568C503 581 497 592 497 610H463C463 592 457 581 440 568C397 536 368 478 368 416Z" fill="#5B3733" fill-opacity="0.65"/>
+  <path d="M346 432C352 318 413 246 480 246C547 246 608 318 614 432C587 452 554 468 519 476C500 480 460 480 441 476C406 468 373 452 346 432Z" fill="#6F453F"/>
+  <path d="M381 403C398 329 434 278 480 278C526 278 562 329 579 403C559 416 540 426 520 432C500 438 460 438 440 432C420 426 401 416 381 403Z" fill="#F4D7C2" fill-opacity="0.35"/>
+  <path d="M329 876C372 813 419 786 480 786C541 786 588 813 631 876L646 1200H314L329 876Z" fill="#7A4A42" fill-opacity="0.14"/>
+  <circle cx="362" cy="226" r="16" fill="#C8875A" fill-opacity="0.6"/>
+  <circle cx="598" cy="212" r="11" fill="#C8875A" fill-opacity="0.45"/>
+  <text x="480" y="1030" text-anchor="middle" fill="#6A463E" fill-opacity="0.42" font-family="Georgia, serif" font-size="72" letter-spacing="8">SONIA</text>
+  <text x="480" y="1088" text-anchor="middle" fill="#6A463E" fill-opacity="0.38" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">PLACEHOLDER PORTRAIT</text>
+</svg>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AttractionQuiz } from "./_components/AttractionQuiz";
 
 const outcomes = [
   "See the difference between chemistry, trauma bonding, and genuine steadiness.",
@@ -185,6 +186,103 @@ export default function Home() {
       </section>
 
       <section
+        id="about"
+        className="border-b border-white/10 bg-[var(--color-cream)] text-[var(--color-ink)]"
+      >
+        <div className="mx-auto grid max-w-[1440px] gap-10 px-6 py-20 sm:px-10 lg:grid-cols-[0.92fr_1.08fr] lg:px-14 lg:py-28">
+          <div className="relative overflow-hidden rounded-[2.2rem] border border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(17,12,14,0.03),rgba(17,12,14,0.01))] p-4 shadow-[0_24px_80px_rgba(17,12,14,0.12)]">
+            <div className="relative min-h-[520px] overflow-hidden rounded-[1.7rem] bg-[#eadfd4]">
+              <Image
+                src="/sonia-placeholder.svg"
+                alt="Placeholder portrait illustration for Sonia."
+                fill
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                className="object-cover"
+                priority={false}
+              />
+            </div>
+            <div className="absolute left-8 top-8 rounded-full border border-white/35 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-ink)] backdrop-blur-sm">
+              Placeholder photo
+            </div>
+            <div className="absolute bottom-8 left-8 max-w-[18ch] rounded-[1.2rem] border border-white/25 bg-[rgba(17,12,14,0.72)] px-4 py-3 text-sm leading-6 text-white backdrop-blur-sm">
+              Replace this with Sonia&apos;s official headshot when available.
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-clay)]">
+              About Sonia
+            </p>
+            <h2 className="mt-4 max-w-[10ch] font-serif text-4xl leading-tight text-balance sm:text-5xl">
+              Warm guidance for breaking unsafe attraction loops.
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--color-ink-muted)]">
+              Sonia blends practical coaching, nervous-system awareness, and
+              pattern literacy so women can stop mistaking intensity for
+              intimacy. Her work is direct, grounded, and designed to help you
+              recognize what your body is choosing before your mind explains it
+              away.
+            </p>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
+              {[
+                "Clear enough to spot the pattern",
+                "Gentle enough to stay regulated",
+                "Structured enough to change behavior",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[1.35rem] border border-[var(--color-line)] bg-white/65 px-4 py-4 text-sm leading-7 text-[var(--color-ink)]"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#quiz"
+                className="inline-flex min-h-14 items-center justify-center rounded-full bg-[var(--color-ink)] px-8 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-cream)] transition duration-300 hover:-translate-y-0.5 hover:bg-black"
+              >
+                Take the attraction quiz
+              </a>
+              <a
+                href="#testimonials"
+                className="inline-flex min-h-14 items-center justify-center rounded-full border border-[var(--color-line)] px-8 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-ink)] transition duration-300 hover:border-[rgba(17,12,14,0.24)] hover:bg-white"
+              >
+                Read sample feedback
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="quiz"
+        className="border-b border-white/10 bg-[linear-gradient(180deg,#181013_0%,#110c0e_100%)]"
+      >
+        <div className="mx-auto max-w-[1440px] px-6 py-20 sm:px-10 lg:px-14 lg:py-28">
+          <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+            <div className="lg:sticky lg:top-10 lg:self-start">
+              <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-gold)]">
+                Attraction filter quiz
+              </p>
+              <h2 className="mt-4 max-w-[11ch] font-serif text-4xl leading-tight text-balance text-white sm:text-5xl">
+                Check how much unsafe love still feels magnetic.
+              </h2>
+              <p className="mt-6 max-w-md text-lg leading-8 text-white/72">
+                This is a coaching reflection tool, not a diagnosis. Answer
+                honestly and use the result to notice where chemistry may still
+                be overriding discernment.
+              </p>
+            </div>
+
+            <AttractionQuiz />
+          </div>
+        </div>
+      </section>
+
+      <section
         id="method"
         className="mx-auto grid max-w-[1440px] gap-12 px-6 py-20 sm:px-10 lg:grid-cols-[minmax(0,420px)_1fr] lg:px-14 lg:py-28"
       >
@@ -327,6 +425,70 @@ export default function Home() {
               to <code>NEXT_PUBLIC_STRIPE_PAYMENT_LINK</code>.
             </p>
           ) : null}
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        className="border-y border-white/10 bg-[var(--color-cream)] text-[var(--color-ink)]"
+      >
+        <div className="mx-auto max-w-[1440px] px-6 py-20 sm:px-10 lg:px-14 lg:py-28">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-[var(--color-clay)]">
+                Sample testimonials
+              </p>
+              <h2 className="mt-4 max-w-[11ch] font-serif text-4xl leading-tight text-balance sm:text-5xl">
+                Placeholder quotes for launch, marked honestly.
+              </h2>
+            </div>
+            <p className="max-w-xl text-base leading-8 text-[var(--color-ink-muted)]">
+              These are sample cards so the section design can be reviewed
+              before real client feedback is collected. Swap in verified quotes
+              before publishing publicly.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {[
+              {
+                quote:
+                  "I could finally see how I kept calling inconsistency a spark. The quiz and Sonia's framework made the pattern obvious without making me feel judged.",
+                name: "Sample Client A",
+                meta: "Placeholder testimonial",
+              },
+              {
+                quote:
+                  "This helped me notice that calm felt unfamiliar, not boring. That distinction changed how I evaluated someone new in the first conversation.",
+                name: "Sample Client B",
+                meta: "Placeholder testimonial",
+              },
+              {
+                quote:
+                  "The process gave me language for what my body already knew. I stopped negotiating with the red flags and started trusting my own pace.",
+                name: "Sample Client C",
+                meta: "Placeholder testimonial",
+              },
+            ].map((item) => (
+              <article
+                key={item.name}
+                className="rounded-[1.8rem] border border-[var(--color-line)] bg-white px-6 py-6 shadow-[0_18px_60px_rgba(17,12,14,0.08)]"
+              >
+                <p className="font-serif text-2xl leading-tight text-[var(--color-ink)]">
+                  “{item.quote}”
+                </p>
+                <div className="mt-6 flex items-center justify-between gap-4 border-t border-[var(--color-line)] pt-5 text-sm uppercase tracking-[0.22em] text-[var(--color-ink-muted)]">
+                  <div>
+                    <p className="text-[var(--color-ink)]">{item.name}</p>
+                    <p className="mt-1">{item.meta}</p>
+                  </div>
+                  <span className="rounded-full border border-[var(--color-line)] px-3 py-1 text-[0.68rem]">
+                    Example
+                  </span>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
